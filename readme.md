@@ -1,6 +1,6 @@
-# node-code-sample-starter
+# node-email-gpt
 
-This sample repo will show you how to easily to get started with the Nylas Node.js SDK.
+This sample repo will show you how to easily to get started with the Nylas Node.js SDK to create vector embeddings emails for augmenting Generative AI completions models. Think of ChatGPT for Emails, so EmailGPT.
 
 ## Setup
 
@@ -13,9 +13,13 @@ This sample repo will show you how to easily to get started with the Nylas Node.
 You'll need the following values:
 
 ```text
-ACCESS_TOKEN = ""
-CLIENT_ID = ""
-CLIENT_SECRET = ""
+CLIENT_ID=CLIENT_ID
+CLIENT_SECRET=CLIENT_SECRET
+API_SERVER=API_SERVER
+ACCESS_TOKEN=ACCESS_TOKEN
+RECIPIENT_ADDRESS=RECIPIENT_ADDRESS
+OPEN_AI_API_KEY=OPEN_AI_API_KEY
+PINECONE_API_KEY=PINECONE_API_KEY
 ```
 
 Add the above values to a `.env` file:
@@ -38,20 +42,12 @@ $ node build/index.js
 When you run the script, you'll get account information output in your terminal:
 
 ```bash
-{
-    ...
-    id: '<ACCOUNT_ID>',
-    accountId: '<ACCOUNT_ID>',
-    object: 'account',
-    name: '<ACCOUNT_NAME>',
-    emailAddress: '<ACCOUNT_EMAIL>',
-    provider: '<EMAIL_PROVIDER>',
-    organizationUnit: 'label',
-    syncState: 'running',
-    linkedAt: 2022-04-21T14:48:14.000Z,
-    accessToken: ''
-  }
-}
+# ...
+# ...logging all function outputs
+# ...
+Question: Did Blag email me about a meeting?
+
+Answer: No, Blag did not email you about a meeting. They emailed you resources that might be helpful for topics related to connecting to user accounts, sending and receiving emails, contextual email clients, calendar availability and integration in applications.
 ```
 
 ## Learn more

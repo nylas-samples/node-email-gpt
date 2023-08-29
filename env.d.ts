@@ -4,7 +4,6 @@ declare global {
         CLIENT_ID: string
         CLIENT_SECRET: string
         API_SERVER: string
-        HUGGINGFACE_HUB_API_KEY: string
         ACCESS_TOKEN: string
         RECIPIENT_ADDRESS: string
         OPEN_AI_API_KEY: string
