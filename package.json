@@ -14,7 +14,7 @@
     "build": "tsc",
     "prepare": "npm run build",
     "watch": "tsc --watch",
-    "start": "node build/index.js"
+    "start": "node build/index.js --trace-warnings"
   },
   "jest": {
     "preset": "ts-jest/presets/js-with-ts",
@@ -56,7 +56,9 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
+    "@pinecone-database/pinecone": "^0.1.6",
     "dotenv": "^16.0.1",
-    "nylas": "^6.4.0"
+    "nylas": "^6.10.0",
+    "openai": "^4.0.1"
   }
 }
